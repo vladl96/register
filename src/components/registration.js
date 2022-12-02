@@ -56,20 +56,20 @@ const App = () => {
       <div className='formular-v'>
 
         <Form
-        {...formItemLayout}
-        form={form}
-        name="register"
-        onFinish={onFinish}
-        initialValues={{
-          residence: [],
-          prefix: '86',
-        }}
-        scrollToFirstError
+          {...formItemLayout}
+          form={form}
+          name="register"
+          onFinish={onFinish}
+          initialValues={{
+            residence: [],
+            prefix: '86',
+          }}
+          scrollToFirstError
         >
 
         <Form.Item
-          name="nickname"
-          label="Nickname"
+          name="username"
+          label="Username"
           tooltip="What do you want others to call you?"
           rules={[
             {
@@ -100,9 +100,9 @@ const App = () => {
           <Input.Password />
         </Form.Item>
 
-        <Form.Item
+        <Form.Item 
           name="confirm"
-          label="Confirm Password"
+          label="Confirm"
           dependencies={['password']}
           hasFeedback
           rules={[
@@ -157,13 +157,17 @@ const App = () => {
             I have read the <a href="https://vladl.eu/#home">agreement</a>
           </Checkbox>
           </Form.Item>
+
+        
           <Form.Item {...tailFormItemLayout}>
           <Button type="primary" htmlType="submit">
             Register
           </Button>
         </Form.Item>
         </Form>
+
       </div>
+      
     </div>
   );
 };
