@@ -11,7 +11,6 @@ import {
   Row,
   Select,
 } from 'antd';
-import "./registration.css"
 
 
 const { Option } = Select;
@@ -330,7 +329,7 @@ const App = () => {
         {...tailFormItemLayout}
       >
         <Checkbox>
-          I have read the <a href="">agreement</a>
+          I have read the <a href="https://vladl.eu/#home">agreement</a>
         </Checkbox>
       </Form.Item>
       <Form.Item {...tailFormItemLayout}>
